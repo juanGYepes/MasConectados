@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mascotas perdidas y encontradas</title>
+    <link rel="stylesheet" href="Styleperdidas.css">
+</head>
+<body>
+    <header class="encabezado">
+        <a href="index.html" class="logo">
+            <img src="images header/Logo Horizontal.png" alt="">
+        </a>
+        <nav class="menu">
+            <div class="paginas">
+                <a href="#">Cuidados</a>
+                <a href="#">Comunidad</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+            <div class="linea"></div>
+            <div class="botonrojo">
+                <a href="adopcion.html">Adopta aquí!</a>
+            </div>
+            <div class="botonazul">
+                <a href="mascotasPerdidas.html">Encuentra a tu peludo</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+    <div class="texto1">
+        <h1>Registra una mascota perdida</h1><br>
+        <p>Entendemos lo importante que es tu mascota para ti y estamos aquí para ayudarte a reunirte con ella. Por favor, completa el siguiente formulario con la información de tu mascota perdida para que podamos trabajar juntos en su búsqueda y reunión contigo.</p>
+    </div>
+    <form class="pet-owner-form">
+        <div class="container">
+            <div class="form-section">
+                <h2>Mascota</h2>
+                <label for="pet-name">Nombre</label>
+                <input type="text" id="pet-name" name="pet-name" placeholder="Ingresa el nombre de tu mascota">
+
+                <label for="species">Especie</label>
+                <select id="species" name="species">
+                    <option value="" disabled selected>Selecciona una especie</option>
+                    <option value="perro">Perro</option>
+                    <option value="gato">Gato</option>
+                    <option value="hamster">Hamster</option>
+                    <option value="otro">Otro</option>
+                    <!-- Add more options as needed -->
+                </select>
+
+                <label for="breed">Raza</label>
+                <input type="text" id="pet-raza" name="pet-raza" placeholder="Ingresa la raza de tu mascota">
+  
+                  
+                
+
+                <label for="age">Edad</label>
+                <input type="number" id="age" name="age" placeholder="Ingresa la edad de tu mascota en años">
+
+                <label for="sex">Sexo</label>
+                <select id="sex" name="sex">
+                    <option value="" disabled selected>Selecciona un sexo</option>
+                    <option value="macho">Macho</option>
+                    <option value="hembra">Hembra</option>
+                </select>
+
+                <label for="lfecha">Fecha de perdida</label>
+                <input type="date" name="fecha_nac" id="lfecha"
+                min="1930-01-01" value="2024-01-01" max="2050-01-01">
+
+                <label for="lost-location">Lugar de pérdida</label>
+                <input type="text" id="lost-location" name="lost-location" placeholder="Sector">
+
+                <label for="municipality">Municipio</label>
+                <select id="municipality" name="municipality">
+                    <option value="" disabled selected>Selecciona un municipio</option>
+                    <option value="Medellin">Medellin</option>
+                    <option value="Caldas">Caldas</option>
+                    <option value="Envigado">Envigado</option>
+                    <option value="Itagui">Itagui</option>
+                    <option value="Barbosa">Barbosa</option>
+                    <option value="Barbosa">Sabaneta</option>
+                    <option value="Barbosa">La estrella</option>
+                    <option value="Barbosa">Bello</option>
+                    <!-- Add municipality options -->
+                </select>
+
+                <label for="additional-info">Información adicional</label>
+                <textarea id="additional-info" name="additional-info" placeholder="Características especiales: color, tamaño"></textarea>
+            </div>
+
+            <div class="form-section">
+                <h2>Propietario</h2>
+                <label for="owner-name">Nombre</label>
+                <input type="text" id="owner-name" name="owner-name" placeholder="Ingresa tu nombre">
+
+                <label for="last-name">Apellido</label>
+                <input type="text" id="last-name" name="last-name" placeholder="Ingresa tu apellido">
+
+                <label for="primary-phone">Teléfono primario</label>
+                <input type="tel" id="primary-phone" name="primary-phone" placeholder="(321) 456 7890">
+
+                <label for="secondary-phone">Teléfono secundario</label>
+                <input type="tel" id="secondary-phone" name="secondary-phone" placeholder="(321) 456 7890">
+
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" placeholder="correo@gmail.com">
+
+                <label for="address">Dirección</label>
+                <input type="text" id="address" name="address" placeholder="Ingresa tu dirección">
+
+                <label for="owner-municipality">Municipio</label>
+                <select id="owner-municipality" name="owner-municipality">
+                    <option value="" disabled selected>Selecciona un municipio</option>
+                    <option value="Medellin">Medellin</option>
+                    <option value="Caldas">Caldas</option>
+                    <option value="Envigado">Envigado</option>
+                    <option value="Itagui">Itagui</option>
+                    <option value="Barbosa">Barbosa</option>
+                    <option value="Barbosa">Sabaneta</option>
+                    <option value="Barbosa">La estrella</option>
+                    <option value="Barbosa">Bello</option>
+
+                </select>
+
+                <label for="pet-photo">Foto de la mascota</label>
+                <input type="file" id="pet-photo" name="pet-photo">            
+              <div class="textofinal">
+                <p>Con esta información, podremos iniciar nuestros esfuerzos para encontrar a tu mascota perdida lo antes posible. </div><div class="textofinal1"> Estamos comprometidos en ayudarte en este proceso difícil y esperamos reunirte pronto con tu compañero peludo.</p></div>
+              </div>
+
+
+            </div>
+        </div>
+
+        <div class="submit-container">
+            <button type="submit">Enviar</button>
+        </div>
+    </form>
+
+
+    <div class="texto2">
+        <h1>Registra una mascota encontrada</h1><br>
+        <p>¡Gracias por ayudar a una mascota perdida al llevarla a un lugar seguro! Por favor, completa el siguiente formulario con la información de la mascota que encontraste para que podamos trabajar en reunirla con su familia.</p>
+    </div>
+    <form class="pet-owner-form">
+        <div class="container">
+            <div class="form-section">
+                <h2>Mascota</h2>
+                <label for="pet-name">Nombre(opcional)</label>
+                <input type="text" id="pet-name" name="pet-name" placeholder="Ingresa el nombre de tu mascota">
+
+                <label for="species">Especie</label>
+                <select id="species" name="species">
+                    <option value="" disabled selected>Selecciona una especie</option>
+                    <option value="perro">Perro</option>
+                    <option value="gato">Gato</option>
+                    <option value="hamster">Hamster</option>
+                    <option value="otro">Otro</option>
+                    <!-- Add more options as needed -->
+                </select>
+
+                <label for="breed">Raza</label>
+                <input type="text" id="pet-raza" name="pet-raza" placeholder="Ingresa la raza de tu mascota">
+  
+            
+
+                <label for="age">Edad aproximada</label>
+                <input type="number" id="age" name="age" placeholder="Ingresa la edad de tu mascota en años">
+
+                <label for="sex">Sexo</label>
+                <select id="sex" name="sex">
+                    <option value="" disabled selected>Selecciona un sexo</option>
+                    <option value="macho">Macho</option>
+                    <option value="hembra">Hembra</option>
+                </select>
+
+                <label for="lfecha">Fecha de encuentro</label>
+                <input type="date" name="fecha_nac" id="lfecha"
+                min="1930-01-01" value="2024-01-01" max="2050-01-01">
+
+                <label for="lost-location">Lugar de encuentro</label>
+                <input type="text" id="lost-location" name="lost-location" placeholder="Sector">
+
+                <label for="municipality">Municipio</label>
+                <select id="municipality" name="municipality">
+                    <option value="" disabled selected>Selecciona un municipio</option>
+                    <option value="Medellin">Medellin</option>
+                    <option value="Caldas">Caldas</option>
+                    <option value="Envigado">Envigado</option>
+                    <option value="Itagui">Itagui</option>
+                    <option value="Barbosa">Barbosa</option>
+                    <option value="Barbosa">Sabaneta</option>
+                    <option value="Barbosa">La estrella</option>
+                    <option value="Barbosa">Bello</option>
+                    <!-- Add municipality options -->
+                </select>
+
+                <label for="additional-info">Información adicional</label>
+                <textarea id="additional-info" name="additional-info" placeholder="Características especiales: color, tamaño"></textarea>
+            </div>
+
+            <div class="form-section">
+                <h2>Responsable</h2>
+                <label for="owner-name">Nombre</label>
+                <input type="text" id="owner-name" name="owner-name" placeholder="Ingresa tu nombre">
+
+                <label for="last-name">Apellido</label>
+                <input type="text" id="last-name" name="last-name" placeholder="Ingresa tu apellido">
+
+                <label for="primary-phone">Teléfono primario</label>
+                <input type="tel" id="primary-phone" name="primary-phone" placeholder="(321) 456 7890">
+
+                <label for="secondary-phone">Teléfono secundario</label>
+                <input type="tel" id="secondary-phone" name="secondary-phone" placeholder="(321) 456 7890">
+
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" placeholder="correo@gmail.com">
+
+                <label for="address">Dirección</label>
+                <input type="text" id="address" name="address" placeholder="Ingresa tu dirección">
+
+                <label for="owner-municipality">Municipio</label>
+                <select id="owner-municipality" name="owner-municipality">
+                    <option value="" disabled selected>Selecciona un municipio</option>
+                    <option value="Medellin">Medellin</option>
+                    <option value="Caldas">Caldas</option>
+                    <option value="Envigado">Envigado</option>
+                    <option value="Itagui">Itagui</option>
+                    <option value="Barbosa">Barbosa</option>
+                    <option value="Barbosa">Sabaneta</option>
+                    <option value="Barbosa">La estrella</option>
+                    <option value="Barbosa">Bello</option>
+
+                </select>
+
+                <label for="pet-photo">Foto de la mascota</label>
+                <input type="file" id="pet-photo" name="pet-photo">            
+              <div class="textofinal">
+                <p>Con tu ayuda, podemos aumentar las posibilidades de que esta mascota sea reunida con sus dueños lo antes posible. 
+          </div><div class="textofinal1">¡Gracias por ser un héroe para nuestros amigos peludos!</p></div>
+              </div>
+
+
+            </div>
+        </div>
+
+        <div class="submit-container">
+            <button type="submit">Enviar</button>
+        </div>
+    </form>
+
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footerrow">
+                <div class="footerimg">
+                    <img src="imagen footer/Logo Cuadrado.png" alt="">
+                    <p>Únete a nosotros en esta hermosa misión de conectar corazones peludos con familias felices. ¡Juntos, podemos hacer una diferencia en la vida de estos seres maravillosos!</p>
+                </div>
+                <div class="footerlinks">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li>Adopta una mascota</li>
+                        <li>Encuentra a tu mascota</li>
+                    </ul>
+                </div>
+                <div class="footerlinks">
+                    <h4>Políticas</h4>
+                    <ul>
+                        <li>Términos y Condiciones</li>
+                        <li>Política de privacidad</li>
+                    </ul>
+                </div>
+                <div class="footerlinks">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li>masconectados@email.com</li>
+                        <li>+(57) 321 456 7890</li>
+                    </ul>
+                </div>
+                <div class="footerlinks">
+                    <h4>Síguenos</h4>
+                    <div class="social">
+                        <img src="imagen footer/fb.png" alt="">
+                        <img src="imagen footer/tw.png" alt="">
+                        <img src="imagen footer/yt.png" alt="">
+                        <img src="imagen footer/ig.png" alt="">
+                    </div>
+                </div>               
+            </div>
+        </div>
+    </footer>
+    <div class="final">
+        <div class="texto2">
+            <p>©2024 Masconectados. Todos los derechos reservados.</p>
+        </div>
+        <div id="line2"></div>
+        <div class="nombres">
+            <p>Desarrollado por Juan Carlos y Juan Esteban </p>
+        </div>
+    </div>
+</body>
+</html>
